@@ -1,0 +1,34 @@
+Started by user [8mha:////4MBpbjwcT6KK16lpXiit0/QWjM8Id8FWHScNRGM08G65AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94ozE4oxMAML2LknBAAAA[0mshashi
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/java-cal
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/shashi00776/java-calendar-demo.git
+ > git init /var/lib/jenkins/workspace/java-cal # timeout=10
+Fetching upstream changes from https://github.com/shashi00776/java-calendar-demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/shashi00776/java-calendar-demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/shashi00776/java-calendar-demo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision ff2581523e545134346663d0b7113ebf3e773f5a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f ff2581523e545134346663d0b7113ebf3e773f5a # timeout=10
+Commit message: "Added license"
+First time build. Skipping changelog.
+[java-cal] $ mvn validate
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< dev.outlook.com:java-calendar-demo >-----------------
+[INFO] Building java-calendar-demo Maven Webapp 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.242 s
+[INFO] Finished at: 2022-02-26T13:23:05Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

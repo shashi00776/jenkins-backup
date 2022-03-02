@@ -1,0 +1,23 @@
+Started by GitHub push by shashi00776
+Running as SYSTEM
+Building remotely on [8mha:////4HWz4lE9cA3bRAMUAmGACkAw3DEyQNLzFfFwVEP05oFkAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 in workspace /home/ec2-user/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ec2-user/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shashi00776/c-project2.git # timeout=10
+Fetching upstream changes from https://github.com/shashi00776/c-project2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/shashi00776/c-project2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 12224431038c2d4c6c9e9f7d306d71db7c26debf (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 12224431038c2d4c6c9e9f7d306d71db7c26debf # timeout=10
+Commit message: "Update test4"
+ > git rev-list --no-walk 33343522b71ba7692673d5bd78561ca1002216cb # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins1753975709651069277.sh
++ cd /home/ec2-user/workspace/c-project
++ make
+make: 'ABC.exe' is up to date.
+Finished: SUCCESS

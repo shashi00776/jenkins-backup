@@ -1,0 +1,38 @@
+Started by GitHub push by shashi00776
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/c-project1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/shashi00776/c-project2.git
+ > git init /var/lib/jenkins/workspace/c-project1 # timeout=10
+Fetching upstream changes from https://github.com/shashi00776/c-project2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/shashi00776/c-project2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/shashi00776/c-project2.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 33343522b71ba7692673d5bd78561ca1002216cb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 33343522b71ba7692673d5bd78561ca1002216cb # timeout=10
+Commit message: "Update test4"
+First time build. Skipping changelog.
+[c-project1] $ /bin/sh -xe /tmp/jenkins2878121589605968180.sh
++ make
+gcc -c main.c
+main.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main () {
+ ^~~~
+main.c: In function ‘main’:
+main.c:2:2: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+  biggest3();
+  ^~~~~~~~
+main.c:3:2: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+  factorial();
+  ^~~~~~~~~
+gcc -c big3.c
+gcc -c fact.c
+gcc -o ABC.exe main.o big3.o fact.o
+Finished: SUCCESS

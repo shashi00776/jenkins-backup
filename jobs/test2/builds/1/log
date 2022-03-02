@@ -1,0 +1,26 @@
+Started by user [8mha:////4MBpbjwcT6KK16lpXiit0/QWjM8Id8FWHScNRGM08G65AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94ozE4oxMAML2LknBAAAA[0mshashi
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test2
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/shashi00776/Mini-Voting-System.git
+ > git init /var/lib/jenkins/workspace/test2 # timeout=10
+Fetching upstream changes from https://github.com/shashi00776/Mini-Voting-System.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/shashi00776/Mini-Voting-System.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/shashi00776/Mini-Voting-System.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision fc7d5219d324d5be12eb80cfdc82766cdec762b7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fc7d5219d324d5be12eb80cfdc82766cdec762b7 # timeout=10
+Commit message: "Bug Fixed"
+First time build. Skipping changelog.
+[test2] $ /bin/sh -xe /tmp/jenkins7379458925404352037.sh
++ make
+/tmp/jenkins7379458925404352037.sh: line 2: make: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
